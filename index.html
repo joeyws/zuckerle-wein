@@ -21,8 +21,8 @@
   
     #header{text-align:center;}
     #content{max-width:960px;margin:0 auto;}
-    #bilder{font-size:0;line-height:0;text-align:center;}
-    #bilder img{width:220px;margin:0 10px 10px 0;vertical-align:middle;}
+    #bilder{font-size:0;line-height:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;}
+    #bilder img{width:200px;margin:0 10px 10px 0;vertical-align:middle;}
     #footer{text-align:right;}
     
     .items{display:flex;align-items:flex-start;align-content:flex-start;flex-wrap:wrap;gap:40px;}
@@ -52,9 +52,12 @@
 
   <div id="header">
     <h1>
+      <img src="bilder/weinbau.png" alt="Weinbau" width="100px" /><br>
       <img src="bilder/wappen.png" alt="Schweickhardt" width="340px" />
     </h1>
     <p>Weine &nbsp; &nbsp; Br&auml;nde &nbsp; &nbsp; Sekt</p>
+    <p>Terrassensteillage</p>
+    <p>Reben gepflegt und geerntet in aufwändiger Handarbeit</p>
     <img src="bilder/weinberg.jpg" alt="Weinberg" style="margin-top:4em;width:100%;" />
   </div>
 
@@ -63,23 +66,23 @@
   <div class="items">
     <div class="item red">
       <span class="title">Gryllus aridus barrique 2018</span>
-      <span class="description">Rotwein trocken, 3-Sterne<br>Deutscher Qualitätswein</span>
+      <span class="description">Premium-Rotwein trocken, 3-Sterne<br>Deutscher Qualitätswein</span>
       <span class="description-2">Mehrjährig im Barrique gereift<br>Johannisbeer- und Schlehen-Aromen<br>Extrem ertragsreduzierte Weinstöcke</span>
-      <span class="alc">13</span>
+      <span class="alc">13,5</span>
       <span class="liter">0,75</span>
       <span class="price">23</span>
     </div>
     <div class="item rose">
       <span class="title">Lacerta aridus barrique 2018</span>
-      <span class="description">Rosé trocken, 3-Sterne<br>Deutscher Qualitätswein</span>
-      <span class="description-2">Hergestellt im Saignée-Verfahren<br>Einjährig im Barrique gereift<br>Extrem ertragsreduzierte Weinstöcke</span>
+      <span class="description">Premium-Rosé trocken, 3-Sterne<br>Deutscher Qualitätswein</span>
+      <span class="description-2">Hergestellt im Saignée-Verfahren<br>Einjährig im Barrique gereift, Batonage im Barrique<br>Extrem ertragsreduzierte Weinstöcke</span>
       <span class="alc">13</span>
       <span class="liter">0,375</span>
       <span class="price">14</span>
     </div>
     <div class="item rose">
       <span class="title">Lacerta aridus 2020</span>
-      <span class="description">Rosé trocken, 3-Sterne<br>Deutscher Qualitätswein</span>
+      <span class="description">Premium-Rosé trocken, 3-Sterne<br>Deutscher Qualitätswein</span>
       <span class="description-2">Hergestellt im Saignée-Verfahren<br>Extrem ertragsreduzierte Weinstöcke</span>
       <span class="alc">12,5</span>
       <span class="liter">0,75</span>
@@ -87,7 +90,7 @@
     </div>
     <div class="item white">
       <span class="title">Papilio aridus 2020</span>
-      <span class="description">Weißwein trocken, 2-Sterne<br>Deutscher Qualitätswein</span>
+      <span class="description">Premium-Weißwein trocken, 2-Sterne<br>Deutscher Qualitätswein</span>
       <span class="description-2">Ertragsreduzierte Weinstöcke</span>
       <span class="alc">12,5</span>
       <span class="liter">0,75</span>
@@ -95,8 +98,8 @@
     </div>
     <div class="item white">
       <span class="title">Papilio aridus 2021</span>
-      <span class="description">Weißwein trocken, 2-Sterne<br>Deutscher Qualitätswein</span>
-      <span class="description-2">Ertragsreduzierte Weinstöcke</span>
+      <span class="description">Premium-Weißwein trocken, 2-Sterne<br>Deutscher Qualitätswein</span>
+      <span class="description-2">Ertragsreduzierte Weinstöcke<br>Erhältlich nach Abfüllung</span>
       <span class="alc">12,5</span>
       <span class="liter">0,75</span>
       <span class="price">15</span>
@@ -115,7 +118,7 @@
 
   <h2>Weitere Angebote</h2>
   <p><b>Begrenzte Probierpakete</b><br>Preise auf Anfrage</p>
-  <p><b>Winzersekt</b> trocken<br>9-monatige Lagerung<br>Erhältlich ab Ende 2022/Anfang 2023</p>
+  <p><b>Winzersekt</b> trocken<br>Fermentation en bouteille (Flaschengärung) mit anschließendem Degorgieren der Hefe<br>9-monatige Lagerung<br>Erhältlich ab Ende 2022/Anfang 2023</p>
   <p><b>Traubenbrand</b>, <b>Weinbrand</b> und <b>Brandy</b> reift zurzeit im Barrique</p>
   
   <hr>
@@ -129,6 +132,7 @@
 
   <hr>
 
+  <img src="bilder/etikett.png" style="max-width:600px;display:block;margin:0 auto 40px auto;" />
   <div id="bilder">
     <img src="bilder/IMG_9572.jpg" />
     <img src="bilder/IMG_3257.jpg" />
@@ -155,7 +159,7 @@
   </p>
 
   <div id="impressum">
-    <p>Impressum:<br>Bernd Schweickhardt<br><span id="address1"></span><br><span id="address2"></span><br><a class="phone"></a><br><a class="email"></a><br>Steuernummer: 97298/29191</p>
+    <p>Impressum:<br>Familie Bernd Schweickhardt<br><span id="address1"></span><br><span id="address2"></span><br><a class="phone"></a><br><a class="email"></a><br>Steuernummer: 97298/29191</p>
     <p>Datenschutzerk&auml;rung:<br>Diese Datenschutzerkl&auml;rung kl&auml;rt Sie &uuml;ber die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten, nachfolgend kurz &bdquo;Daten&ldquo;, innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepr&auml;senzen, wie z.B. unsere Social-Media-Profile auf, nachfolgend gemeinsam bezeichnet als &bdquo;Onlineangebot&ldquo;. Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. &bdquo;Verarbeitung&ldquo; oder &bdquo;Verantwortlicher&ldquo; verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO). Arten der verarbeiteten Daten k&ouml;nnen Bestandsdaten (z.B. Namen, Adressen), Kontaktdaten (z.B. Email, Telefonnummern), Inhaltsdaten (z.B. Texteingaben, Fotografien, Videos), Nutzungsdaten (z.B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten) und Meta-/Kommunikationsdaten (z.B. Ger&auml;te-Informationen, IP-Adressen) sein.</p>
     <p>Betroffene Personen sind Besucher und Nutzer des Onlineangebotes, nachfolgend zusammenfassend auch als &bdquo;Nutzer&ldquo; bezeichnet. Zweck der Verarbeitung sind die Zurverf&uuml;gungstellung des Onlineangebotes mit seinen Funktionen und Inhalten, die Beantwortung von Kontaktanfragen und die Kommunikation mit Nutzern, Sicherheitsma&szlig;nahmen und die Reichweitenmessung. &bdquo;Personenbezogene Daten&ldquo; sind alle Informationen, die sich auf eine identifizierte oder identifizierbare nat&uuml;rliche Person, im Folgenden &bdquo;betroffene Person&ldquo;, beziehen; als identifizierbar wird eine nat&uuml;rliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung (z.B. Cookie) oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identit&auml;t dieser nat&uuml;rlichen Person sind. &bdquo;Verarbeitung&ldquo; ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgef&uuml;hrte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten. Der Begriff reicht weit und umfasst praktisch jeden Umgang mit Daten. &bdquo;Pseudonymisierung&ldquo; die Verarbeitung personenbezogener Daten in einer Weise, dass die personenbezogenen Daten ohne Hinzuziehung zus&auml;tzlicher Informationen nicht mehr einer spezifischen betroffenen Person zugeordnet werden k&ouml;nnen, sofern diese zus&auml;tzlichen Informationen gesondert aufbewahrt werden und technischen und organisatorischen Ma&szlig;nahmen unterliegen, die gew&auml;hrleisten, dass die personenbezogenen Daten nicht einer identifizierten oder identifizierbaren nat&uuml;rlichen Person zugewiesen werden. &bdquo;Profiling&ldquo; jede Art der automatisierten Verarbeitung personenbezogener Daten, die darin besteht, dass diese personenbezogenen Daten verwendet werden, um bestimmte pers&ouml;nliche Aspekte, die sich auf eine nat&uuml;rliche Person beziehen, zu bewerten, insbesondere um Aspekte bez&uuml;glich Arbeitsleistung, wirtschaftliche Lage, Gesundheit, pers&ouml;nliche Vorlieben, Interessen, Zuverl&auml;ssigkeit, Verhalten, Aufenthaltsort oder Ortswechsel dieser nat&uuml;rlichen Person zu analysieren oder vorherzusagen. Als &bdquo;Verantwortlicher&ldquo; wird die nat&uuml;rliche oder juristische Person, Beh&ouml;rde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet, bezeichnet. &bdquo;Auftragsverarbeiter&ldquo; eine nat&uuml;rliche oder juristische Person, Beh&ouml;rde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.</p>
     <p>Nach Ma&szlig;gabe des Art. 13 DSGVO teilen wir Ihnen die Rechtsgrundlagen unserer Datenverarbeitungen mit. Sofern die Rechtsgrundlage in der Datenschutzerkl&auml;rung nicht genannt wird, gilt Folgendes: Die Rechtsgrundlage f&uuml;r die Einholung von Einwilligungen ist Art. 6 Abs. 1 lit. a und Art. 7 DSGVO, die Rechtsgrundlage f&uuml;r die Verarbeitung zur Erf&uuml;llung unserer Leistungen und Durchf&uuml;hrung vertraglicher Ma&szlig;nahmen sowie Beantwortung von Anfragen ist Art. 6 Abs. 1 lit. b DSGVO, die Rechtsgrundlage f&uuml;r die Verarbeitung zur Erf&uuml;llung unserer rechtlichen Verpflichtungen ist Art. 6 Abs. 1 lit. c DSGVO, und die Rechtsgrundlage f&uuml;r die Verarbeitung zur Wahrung unserer berechtigten Interessen ist Art. 6 Abs. 1 lit. f DSGVO. F&uuml;r den Fall, dass lebenswichtige Interessen der betroffenen Person oder einer anderen nat&uuml;rlichen Person eine Verarbeitung personenbezogener Daten erforderlich machen, dient Art. 6 Abs. 1 lit. d DSGVO als Rechtsgrundlage.</p>
